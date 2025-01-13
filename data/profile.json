@@ -9,15 +9,15 @@
     "hardSkills": [
       {
         "name": "HTML",
-        "logo": "https://raw.githubusercontent.com/Manoelllima/data/imgs/html.png"
+        "logo": "https://raw.githubusercontent.com/Manoelllima/portfolio/main/data/imgs/html.png"
       },
       {
         "name": "CSS",
-        "logo": "https://raw.githubusercontent.com/Manoelllima/data/imgs/css.png"
+        "logo": "https://raw.githubusercontent.com/Manoelllima/portfolio/main/data/imgs/css.png"
       },
       {
         "name": "JS",
-        "logo": "https://raw.githubusercontent.com/Manoelllima/data/imgs/js.png"
+        "logo": "https://raw.githubusercontent.com/Manoelllima/portfolio/main/data/imgs/js.png"
       }
     ],
     "softSkills": [
