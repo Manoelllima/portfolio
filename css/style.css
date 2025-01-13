@@ -6,6 +6,10 @@
   --color-quinary: #6f1d1b;
 }
 
+a{
+  text-decoration: none;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -88,8 +92,12 @@ header .header__containerInfo h1{
   padding: 1rem 0;
 }
 
-header .header__containerInfo h1 span{
+header .header__containerInfo h1 span a{
   color: var(--color-ternary);
+}
+
+header .header__containerInfo p span a{
+  color: #FFFFFF;
 }
 
 header .header__containerInfo p{
@@ -134,7 +142,7 @@ main .list .list__item{
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 1rem;
-  padding: .8rem;
+  padding: .6rem;
 }
 
 main .list .list__item .icon_acordeon{
@@ -172,13 +180,12 @@ main .list--skills .flex{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 
 main .list--skills .flex .flex__icon img{
-  height: 3.5rem;
   padding-top: .5rem;
-  width: 3rem;
+  max-width: 2.5rem;
 }
 
 main .list--skills .description__personal{
@@ -199,6 +206,45 @@ main .list--skills .description__personal ul li{
   width: auto;
 }
 
+main .list--portfolio .description ul{
+  padding-top: .5rem;
+}
+
+
+main .list--portfolio .description ul li{
+  list-style: none;
+  padding: .5rem;
+}
+
+main .list--portfolio .description ul li::before{
+  content: '';
+  background-image: url(../data/imgs/github.png);
+  background-size: contain;
+  display: inline-block;
+  height: 2rem;
+  margin-right: .5rem;
+  vertical-align: middle;
+  width: 2rem;
+}
+
+
+main .list--portfolio .description ul li a{
+  color: #FFFFFF;
+  padding-top: .5rem;
+  text-decoration: none;
+}
+
+main .list--education ul {
+  padding-top: .5rem;
+}
+
+main .list--education ul li{
+  list-style: none;
+}
+
+main .list--education ul li p{
+  color: #FFFFFF;
+}
 
 @media screen and (max-width: 610px) {
   header .center .header__containerImg,

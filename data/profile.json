@@ -3,7 +3,7 @@
   "photo": "https://avatars.githubusercontent.com/u/3266640?v=4",
   "job": "Junior Developer",
   "location": "Castanhal - PA",
-  "phone": "(91) 99325-2711",
+  "phone": "(91)99325-2711",
   "email": "manoellucaslds@gmail.com",
   "skills": {
     "hardSkills": [
@@ -33,17 +33,17 @@
   ],
   "portfolio": [
     {
-      "name": "Curso da DIO, criação de uma Pokedex",
+      "name": "Projeto da DIO, criação de uma Pokedex",
       "url": "https://github.com/Manoelllima/DIO_JS_Pokedex.git",
       "github": true
     },
     {
-      "name": "Curso da DIO clone HBO",
+      "name": "Projeto da DIO, clone HBO",
       "url": "https://github.com/Manoelllima/hbomax.git",
       "github": true
     }
   ],
-  "professionalExperience": [
+  "experience": [
     {
       "name": "Carregando...",
       "period": "2022 - até o momento",
