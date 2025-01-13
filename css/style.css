@@ -238,12 +238,21 @@ main .list--education ul {
   padding-top: .5rem;
 }
 
-main .list--education ul li{
+main .list--education ul li,
+main .list--experience ul li{
   list-style: none;
 }
 
 main .list--education ul li p{
   color: #FFFFFF;
+}
+
+main .list-experience .description ul {
+  padding-top: .5rem;
+}
+
+main .list-experience .description ul li{
+  list-style: none;
 }
 
 @media screen and (max-width: 610px) {

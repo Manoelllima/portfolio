@@ -43,10 +43,9 @@ function portfolio(dataProfile){
 function experience(dataProfile){
     const experience = document.getElementById('experience').querySelector('.description ul')
    
+    console.log(dataProfile.experience);
     
-    dataProfile.experience.map((value)=>{ 
-        experience.innerHTML += `<li><h3>${value.name}</h3></li>`
-    })
+    dataProfile.experience.map((value)=>{ experience.innerHTML += `<li><h3>${value.name}</h3></li>`    })
 }
 
 (async ()=>{
