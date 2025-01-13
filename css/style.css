@@ -1,0 +1,228 @@
+:root {
+  --color-primary: #432818;
+  --color-secondary: #99582a;
+  --color-ternary: #bb9457;
+  --color-quaternary: #ffe6a7;
+  --color-quinary: #6f1d1b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #212529;
+  font-family: "Open Sans", sans-serif;
+  padding: 1rem;
+}
+
+.show{
+  height: 100% !important;
+  padding-top: .5rem;
+  transition: 1s opacity  ease-in-out;
+  opacity: 1 !important;
+}
+
+.center {
+  margin: 0 auto;
+  max-width: 680px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+body > .center {
+  border: 2px solid var(--color-quaternary);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+
+.center__containerIcon {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 1rem;
+}
+
+.center .center__containerIcon span {
+  background-color: #ffffffff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+}
+
+header{
+  padding: 1rem 0;
+}
+
+header .center{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+header .header__containerImg{
+  width: 50%;
+}
+
+header .header__containerImg img{
+  border-radius: 50%;
+  display: block;
+  height: 15rem;
+  margin:0 auto;
+  object-fit: cover;
+  object-position: center top;
+  width: 15rem;
+}
+
+header .header__containerInfo{
+  color: #FFFFFF;
+  width: 50%;
+}
+
+header .header__containerInfo h1{
+  padding: 1rem 0;
+}
+
+header .header__containerInfo h1 span{
+  color: var(--color-ternary);
+}
+
+header .header__containerInfo p{
+  padding: .3rem 0;
+}
+
+header .header__containerInfo p::before{
+  background: center / contain no-repeat;
+  content: '';
+  display: inline-block;
+  height: 1rem;
+  margin-right: .5rem;
+  vertical-align: middle;
+  width: 1rem;
+}
+
+header .header__containerInfo p:nth-of-type(1):before{
+  background-image: url(../imgs/icons/user.svg);
+}
+
+header .header__containerInfo p:nth-of-type(2):before{
+  background-image: url(../imgs/icons/location.svg);
+}
+
+header .header__containerInfo p:nth-of-type(3):before{
+  background-image: url(../imgs/icons/telefone.svg);
+}
+
+header .header__containerInfo p:nth-of-type(4):before{
+  background-image: url(../imgs/icons/email.svg);
+}
+
+main{
+  padding: 1rem 0;
+}
+
+main .list .list__item{
+  border: 1px solid var(--color-ternary);
+  border-radius: 1.5rem;
+  color: var(--color-quaternary);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: .8rem;
+}
+
+main .list .list__item .icon_acordeon{
+  cursor: pointer;
+  transform: rotate(90deg);
+  transition: .3s;
+}
+
+main .list .list__item .description{
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+main .list .list__item .description h4{
+  color: var(--color-secondary);
+}
+
+main .list .list__item .description li{
+  font-size: .8rem;
+  list-style-position: inside;
+}
+
+main .list--skills .description{
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+main .list--skills .description .description__professional{
+  width: 50%;
+}
+
+main .list--skills .flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+main .list--skills .flex .flex__icon img{
+  padding-top: .5rem;
+  width: 3rem;
+}
+
+main .list--skills .description__personal{
+  width: 50%;
+}
+
+main .list--skills .description__personal ul{
+  columns: 2;
+  gap: 0;
+  padding-top: .5rem;
+}
+
+main .list--skills .description__personal ul li{
+  color: #FFFFFF;
+  list-style-position: inside;
+  padding: .2rem 0;
+  word-break: break-all;
+  width: auto;
+}
+
+
+@media screen and (max-width: 610px) {
+  header .center .header__containerImg,
+  header .center .header__containerInfo{
+    width: 100%;
+  }
+
+  header .center .header__containerInfo h1{
+    text-align: center;
+  }
+
+  main .list--skills .description .description__professional{
+    text-align: center;
+    width: 100%;
+  }
+
+  main .list--skills .description .description__professional .flex{
+    justify-content: center;
+  }
+
+  main .list--skills .description__personal{
+    padding-top: 1rem;
+    width: 100%;
+  }
+
+  main .list--skills .description__personal h4{
+    text-align: center;
+  }
+}
