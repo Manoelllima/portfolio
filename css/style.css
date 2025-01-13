@@ -171,10 +171,12 @@ main .list--skills .description .description__professional{
 main .list--skills .flex{
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 10px;
 }
 
 main .list--skills .flex .flex__icon img{
+  height: 3.5rem;
   padding-top: .5rem;
   width: 3rem;
 }

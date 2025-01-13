@@ -28,17 +28,17 @@
         <header>
             <div class="center">
                 <div class="header__containerImg">
-                    <img src="imgs/001.jpg" alt="" />
+                    <img id="profile.photo" src="imgs/001.jpg" alt="" />
                 </div>
                 <div class="header__containerInfo">
                     <h1>
                         Olá, me chamo <br />
-                        <span>Manoel Lucas</span>
+                        <span id="profile.name">Carregando...</span>
                     </h1>
-                    <p>Junior Developer</p>
-                    <p>Pará - BR</p>
-                    <p>(91) 99325-2711</p>
-                    <p>manoellucasls@outlook.com</p>
+                    <p><span id="profile.job">Carregando...</span></p>
+                    <p><span id="profile.location">Carregando...</span></p>
+                    <p><span id="profile.phone">Carregando...</span></p>
+                    <p><span id="profile.email">Carregando...</span></p>
                 </div>
             </div>
             <!-- center -->
@@ -51,15 +51,13 @@
                         <h3>Skills</h3>
                         <div class="icon_acordeon">></div> <!-- icon -->
                         <div class="description">
-                            <div class="description__professional">
+                            <div id="hardSkills" class="description__professional">
                                 <h4>Habilidades profissionais:</h4>
-                                <div class="flex">                                    
-                                    <div class="flex__icon"><img src="imgs/icons/html-5-svgrepo-com.svg" alt=""></div> <!-- icon -->
-                                    <div class="flex__icon"><img src="imgs/icons/css-3-svgrepo-com.svg" alt=""></div> <!-- icon -->
-                                    <div class="flex__icon"><img src="imgs/icons/js-official-svgrepo-com.svg" alt=""></div> <!-- icon -->
+                                <div class="flex">                                   
+
                                 </div>
                             </div><!-- profissionais -->
-                            <div class="description__personal">
+                            <div  class="description__personal">
                                 <h4>Habilidades pessoais:</h4>
                                 <ul>
                                     <li>Organização</li>
@@ -124,8 +122,10 @@
            
         </main>
     </div>
-
+    
     <script src="js/acordeon.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
